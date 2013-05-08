@@ -84,8 +84,13 @@
 			jQuery('body').addClass('body-visible');
 		});
 	</script>
+    
+
+
 </head>
 <body <?php if(!isset($class)){ $class = ''; } body_class($class); ?>>
+
+
 
 <div class="header-search-form"><?php get_template_part('searchform', 'header'); ?></div>
 

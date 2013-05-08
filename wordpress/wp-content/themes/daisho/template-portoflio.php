@@ -15,23 +15,21 @@
 ?>
 
 
+<div class="herocontainer">
+<div class="page-content   container_12 ">
 
-<div class="page-content full-width-page full-width-page-content clearfix container_12">
-	<div class="grid_8">
-    	<h1 class="page-title" style="width:100%; ">About Me</h1>
+
+	<div class="grid_12">
+    
         
         <p id="paraone">My name is Ian Edwards and I am a london based digital designer with experience in both agency and in house roles as well as working freelance.</p>
             <p>I love being both a designer and a front-end developer as it allows me to flex my creative muscles and get my hands dirty. It's a great balance and the ever-evolving industry keeps me on my toes </p>
- <p>I have so far been blessed in that i have found myself working in a job that I love. design has been a passion for me for as long as I can remember and has become something of an obsession of mine.</p> 
-          
-           <p>I have experience with Photoshop, illustrator, flash and Dream weaver and my work experience so far includes working for SAY Media, LBI, Media Ingenuity and a breif stint as a Sandwich Artist in Subway (i'm not kidding that was my actual job title) 
-</p>
-        <a href="download/ iamiane_CV.pdf" target="_blank" id="cv">Download CV</a>
-	</div>
+</div>
     
-    <div class="grid_4">
-	</div>
+ 
+
     
+</div>
 </div>
 <!--****************************************************
 <div class=" clearfix ">
@@ -47,13 +45,26 @@
 
 ****************************************************-->
 
-
+<div class="page-content full-width-page full-width-page-content clearfix container_12">
+	
+    
+    
+   <div class="grid_12">
+   
+   <h1 class="page-title" style="width:100%; ">MY WORK</h1>
+   </div>
+   
+</div>
 
 
 <?php get_template_part('project', 'container'); ?>
 
 <div class="tn-grid-container">
 <section id="content">
+
+
+   
+   
 	<section id="options" class="clearfix">
 		<?php
 			$taxonomy = 'portfolio_category';
@@ -164,7 +175,6 @@
 				}
 				//$thumb_descr = addslashes(preg_replace('/\s+/', ' ', trim(get_post_meta($post->ID, 'Description', true))));
 				$thumb_descr = do_shortcode(get_post_meta($post->ID, 'Description', true));
-				$tmpddourrole = get_post_meta($post->ID, 'portfolio_ourrole', true);
 				$tmpdddate = get_post_meta($post->ID, 'portfolio_date', true);
 				$tmpddclient = get_post_meta($post->ID, 'portfolio_client', true);
 				$tmpddagency = get_post_meta($post->ID, 'portfolio_agency', true);
@@ -225,7 +235,6 @@
 				portfolioArray['.$i.'][2]="'.$tmpdddate.'";
 				portfolioArray['.$i.'][3]="'.$tmpddclient.'";
 				portfolioArray['.$i.'][4]="'.$tmpddagency.'";
-				portfolioArray['.$i.'][5]="'.$tmpddourrole.'";
 				portfolioArray['.$i.'][6]="'.preg_replace("/(\n|\r|\r\n)/", '', str_replace("\"","\\\"",do_shortcode($tmpddslides))).'";
 				portfolioArray['.$i.'][7]="'.get_permalink( $post->ID ).'";
 				';
@@ -258,11 +267,26 @@
 <!--****************************************************-->
 <div class="page-content full-width-page full-width-page-content clearfix container_12">
 	
+    
+    
+   <div class="grid_12">
+   
+   <h1 class="page-title" style="width:100%; ">Contact</h1>
+   </div>
+   
+    <div class="grid_6">
+    
+     <p id="paraone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis nisl et ipsum auctor a tristique nulla fermentum. Vivamus ut ipsum turpis, in lobortis urna. </p>
+     <p>Nullam ipsum diam, hendrerit eu cursus ullamcorper, fringilla in justo. Sed tincidunt, eros eget imperdiet lacinia, ante ligula adipiscing tellus, in placerat tellus sapien malesuada lectus. Nulla malesuada magna mauris, sed vestibulum tortor.</p>
+    <p><a href="download/ iamiane_CV.pdf" target="_blank" id="cv">Download CV</a></p>
+    </div>
+   
+   
    <div class="grid_6">
     
     
     
-    <h1 class="page-title" style="width:100%; ">Contact</h1><form name="contact" id="contact-form" method="post" action="contact.php">
+    <form name="contact" id="contact-form" method="post" action="contact.php">
 		<div id="wrapping" class="clearfix">
 			
 			<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" class="txtinput">
@@ -280,10 +304,6 @@
 		</form>
         </div>
         
-        <div class="grid_6">
-        
-        
-        </div>
         
 	</div>
 

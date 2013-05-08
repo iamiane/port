@@ -1,6 +1,21 @@
 	<div style="clear:both;"></div>
 	<footer id="footer">
 		<div class="inner">
+			    <hr />    
+    
+<div class="grid_6">    
+    <div class="copyright_notice">© 2013 Ian Edwards</div>
+</div>
+
+<div class="push_6">    
+    <ul class="footer-social-icons">
+    <li><a href="https://twitter.com/#!/beholdiamiane" target="_blank">t</a></li>
+    <li><a href="http://www.facebook.com/people/Ian-Edwards/667671598" target="_blank">f</a></li>
+    <li><a href="http://uk.linkedin.com/in/iamiane" target="_blank">l</a></li>
+    </ul>
+</div>  
+			
+			
 			<?php 
 			$footer_columns_classes = array();
 			$footer_col_countcustom = get_option('footer_col_countcustom');
@@ -36,5 +51,9 @@
 	<?php wp_footer(); ?>
 	<?php do_action("changerplugin_panel"); ?>
 	<?php echo stripslashes(get_option('analytics_code')); ?>
+    
+ 
+]  
+    
 </body>
 </html>
