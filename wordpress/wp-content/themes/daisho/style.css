@@ -52,6 +52,7 @@ body {
 	/*background-image:url(images/page_bg.png);*/
 	background:#f5f5f5;
 	opacity: 0;
+	
 }
 .body-visible {
 	opacity: 1;
@@ -95,7 +96,6 @@ compact header:
 /* -----------------------------------*/
 /* ---------->>> HEADER <<<-----------*/
 /* -----------------------------------*/
-
 #header * { outline: 0 none; }
 #header { display: block; float: left; min-width: 100%; /* min-height: 150px; */ height: auto; z-index: 150; top: 0; position: relative; }
 @media (max-width: 850px){
@@ -147,8 +147,8 @@ compact header:
 	@media (max-width: 1050px){ .daisho-classic #header .inner { max-width: 800px!important; } }
 
 
-#logo-text, #logo-image, .logo-image { height: 100%; margin: 0 auto; }
-#logo-image img { display: block; margin: auto; }
+#logo-text, #logo-image, .logo-image { height: 100%; margin: 0 auto 20px auto; }
+#logo-image img { display: block; margin: auto; margin-top: 36px; }
 
 #logo-text { display: table; }
 .logo-text-inner { display: table-cell; vertical-align: middle; height: 150px; }
@@ -212,7 +212,7 @@ compact header:
 /* ----------->>> MENU <<<------------*/
 /* -----------------------------------*/
 
-#navigation { position: absolute; right: 0; top: 45px; }
+#navigation { position: absolute; right: 0; top: 0; }
 @media (max-width: 850px){ #navigation { margin-top: 25px; top: 0; } }
 @media (max-width: 950px){ .daisho-portfolio #navigation { margin-top: 25px; top: 0; } }
 
@@ -1660,8 +1660,62 @@ margin-right: auto; text-align:center; width:200px;}
 				float:left;
 				border-bottom: #CCC 2px solid;
 				border-top: #CCC 2px solid;
+				/*box-shadow: 0 4px 4px #888888;   not sure about this one bruv  */
+				
+}
+
+
+.hero_text { background:#000;
+		color:#FFF;
+		font-weight:bold;
+		padding:3px 10px;
+		font-size:23px;
+		width:auto;
+
+}
+
+.contact_holder {
+	margin: 0 auto;
+   position: relative;
+   display: block;
+   max-width: 60%; 
+}
+
+@media (max-width: 850px) {
+	
+	.contact_holder {
+	 max-width: 85%; 
+}
+
+}
+
+.contact_chat {
+	font-size:23px;
+	text-align:center;
+	margin-bottom:40px;
+}
+
+
+.tocontact_holder{
+	width:100%;
+	margin: 20px 0;
+	background-color:#EFEFEF;
+	padding:30px;
+}
+
+.tocontact {
+	margin: 0 auto;
+	display:block;
+	width:200px;
 }
 
 .clearboth {clear:both}
 
+.myface {
+	width:100%;
+	height:auto;
+}
 
+.footer_social {
+
+}

@@ -1,17 +1,16 @@
 	<div style="clear:both;"></div>
+    
 	<footer id="footer">
 		<div class="inner">
-			    <hr />    
+			    
     
-<div class="grid_6">    
-    <div class="copyright_notice">© 2013 Ian Edwards</div>
-</div>
+
 
 <div class="push_6">    
-    <ul class="footer-social-icons">
-    <li><a href="https://twitter.com/#!/beholdiamiane" target="_blank">t</a></li>
-    <li><a href="http://www.facebook.com/people/Ian-Edwards/667671598" target="_blank">f</a></li>
-    <li><a href="http://uk.linkedin.com/in/iamiane" target="_blank">l</a></li>
+    <ul class="footer_social">
+    <li><a href="https://twitter.com/#!/beholdiamiane" target="_blank">Twitter</a></li>
+    <li><a href="http://www.facebook.com/people/Ian-Edwards/667671598" target="_blank">Facebook</a></li>
+    <li><a href="http://uk.linkedin.com/in/iamiane" target="_blank">Linkedin</a></li>
     </ul>
 </div>  
 			

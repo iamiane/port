@@ -162,7 +162,7 @@ $info_box_page = get_option('info_box');
 ?>
 	<nav id="compact_navigation_container" <?php echo $visible_or_not; ?>>
 		<div class="clearfix inner">
-			<a class="header-back-to-blog-link" href="<?php echo $blog_page_link; ?>">
+			<a class="header-back-to-blog-link" href="#">
 				<div class="header-back-to-blog clearfix">
 					<div class="header-back-to-blog-icon"></div>
 					<div class="header-back-to-blog-message"><?php _e('Back', 'flowthemes'); ?></div>

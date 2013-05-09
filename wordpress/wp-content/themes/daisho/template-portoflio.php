@@ -14,16 +14,16 @@
 	if($page_welcome_text = get_post_meta($post->ID, "page_portfolio_welcome_text", true)){ $welcome_text = $page_welcome_text; }
 ?>
 
-
-<div class="herocontainer">
-<div class="page-content   container_12 ">
+<div class="clearboth"></div>
+<div class="herocontainer clearfix ">
+<div class="page-content full-width-page full-width-page-content clearfix container_12">
 
 
 	<div class="grid_12">
     
         
-        <p id="paraone">My name is Ian Edwards and I am a london based digital designer with experience in both agency and in house roles as well as working freelance.</p>
-            <p>I love being both a designer and a front-end developer as it allows me to flex my creative muscles and get my hands dirty. It's a great balance and the ever-evolving industry keeps me on my toes </p>
+        <div class="hero_text">IAMIANE AND I COLOUR IN FOR A LIVING</div>
+        <div class="hero_text">CHECK OUT MY WORK BELOW OR <a href="" >GET IN TOUCH</a> IF YOU WANT TO DISCUSS A PROJECT.</div>
 </div>
     
  
@@ -31,30 +31,8 @@
     
 </div>
 </div>
-<!--****************************************************
-<div class=" clearfix ">
-	
-   <div class="herocontainer">
-    
-    
-   </div>
-        
-        
-</div>
 
 
-****************************************************-->
-
-<div class="page-content full-width-page full-width-page-content clearfix container_12">
-	
-    
-    
-   <div class="grid_12">
-   
-   <h1 class="page-title" style="width:100%; ">MY WORK</h1>
-   </div>
-   
-</div>
 
 
 <?php get_template_part('project', 'container'); ?>
@@ -261,10 +239,10 @@
 
 
  </section>
-
+<hr/>
 </div>
 
-<!--****************************************************-->
+<!--****************************************************-
 <div class="page-content full-width-page full-width-page-content clearfix container_12">
 	
     
@@ -308,7 +286,18 @@
 	</div>
 
 
-<!--****************************************************-->
+****************************************************-->
+<div class="clearboth"></div>
+<div class="full-width-page full-width-page-content clearfix container_12">
+
+
+<div class="tocontact_holder">
+	<div class="tocontact">
+    <a href="?page_id=3860"><div id="button">Contact Me</div></a>
+    </div>
+
+</div>
+</div>
 
 <script type="text/javascript">
 var portfolioArray = [];
